@@ -539,6 +539,7 @@ textarea {
     color: #FFFFFF;
 }
 .form-bot input {
+    padding: 16px 15px;
     margin-right: 12px;
     width: 358px;
     height: 50px;
@@ -546,14 +547,14 @@ textarea {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    font-size: 16px;
+    font-style: normal;
+    color: #FFFFFF;
     background-color: #2F303A;
 }
 .form-bot input::placeholder {
-    padding-left: 16px;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
