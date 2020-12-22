@@ -811,7 +811,9 @@ a[href="tel:+380961111111"] {
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
-.form-field label {
+.form-field span {
+    position: relative;
+    display: inline-block;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 14px;
@@ -832,6 +834,18 @@ a[href="tel:+380961111111"] {
     position: absolute;
     top: 50%;
     left: 12px;
+    cursor: pointer;
+}
+.form-input:focus ~ .icon,
+.form-input:hover ~ .icon {
+    color: #2196F3;
+    border-color:#2196F3;
+    transition: var(--timing-cubic);
+}
+.form-input:focus,
+.form-input:hover {
+    border-color:#2196F3;
+    transition: var(--timing-cubic);
 }
 .comment::placeholder {
     font-size: 12px;
@@ -936,15 +950,4 @@ a[href="tel:+380961111111"] {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-.form-input:focus ~ .icon,
-.form-input:hover ~ .icon {
-    color: #2196F3;
-    border-color:#2196F3;
-    transition: var(--timing-cubic);
-}
-.form-input:focus,
-.form-input:hover {
-    border-color:#2196F3;
-    transition: var(--timing-cubic);
 }
